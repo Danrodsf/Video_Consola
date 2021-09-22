@@ -142,4 +142,46 @@ body {
 
 .bot {
     height: 140px;
+    display: flex;
 }
+
+.ss {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 210px;
+}
+
+.bot::before{
+    content: "";
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    background: rgb(49, 49, 49);
+    border: black solid 1px;
+    position: relative;
+    left: 200px;
+}
+
+.bot::after{
+    content: "";
+    height: 20px;
+    width: 50px;
+    border-radius: 30px;
+    background: rgb(49, 49, 49);
+    border: black solid 1px;
+    position: relative;
+    left: 10px;
+
+}
+
+.altavoz {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 220px;
+    top: 30px;
+
+}
+
