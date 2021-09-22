@@ -1,5 +1,13 @@
 html {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'pretendoregular';
+    src: url(pretendo.woff) format('woff2'),
+         url(pretendo.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -13,7 +21,7 @@ body {
     margin: auto;
     height: 900px;
     width: 515px;
-    background: #fee528;
+    background: #2192dd;
     border-top-right-radius: 3%;
     border-top-left-radius: 3%;
     border-bottom-left-radius: 10%;
@@ -35,6 +43,7 @@ body {
 }
 
 .pantalla {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 320px;
     width: 330px;
     margin: 30px auto auto auto; ;
@@ -42,28 +51,67 @@ body {
     border:black solid 1px;
 }
 
-.pantalla::before {
-    content: "GAMEBOY";
-    color: grey;
+.color {
     position: absolute;
     top: 450px;
-    left: 360px;
+    left: 376px;
     font-size: 2em;
+    color: grey;
+    font-style: italic;
 }
 
-.pantalla::after{
-    content: "COLOR";
-    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
-    color: transparent;
-    background-clip: text;
+.c {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: absolute;
-    top: 450px;
+    color: #830f2e;
+    top: 445px;
     left: 530px;
     font-size: 2em;
+    font-weight: bold;
+}
+
+.o {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    position: absolute;
+    color: #3d3d83;
+    top: 445px;
+    left: 552px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.l {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    position: absolute;
+    color:#599c21;
+    top: 445px;
+    left: 576px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.oo {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    position: absolute;
+    color: #9b752f;
+    top: 445px;
+    left: 595px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.r {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    position: absolute;
+    color:#08507e;
+    top: 445px;
+    left: 620px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .led::before {
-    content: "";
+    content:"";
     height: 10px;
     width: 10px;
     border-radius: 50%;
@@ -81,6 +129,19 @@ body {
     position: absolute;
     top: 270px;
     left: 272px;
+}
+
+.nintendo {
+    font-family:pretendoregular;
+    font-size: 25px;
+    width: 160px;
+    text-align: center;
+    border: #0a466e solid 3px;
+    border-radius: 20px;
+    position: relative;
+    color: #0a466e;
+    left:180px;
+    top:10px;
 }
 
 .botones {
@@ -171,17 +232,16 @@ body {
     background: rgb(49, 49, 49);
     border: black solid 1px;
     position: relative;
-    left: 10px;
-
+    left: 110px;
 }
 
 .altavoz {
-    background-color: black;
-    height: 100px;
-    width: 100px;
-    position: relative;
-    left: 220px;
-    top: 30px;
-
+    position: absolute;
+    text-align: center;
+    font-size: 1.2em ;
+    font-weight: bold;
+    left:610px;
+    top:820px;
+    line-height: 12px;
+    text-shadow: 1px 1px 0px #0a466e;
 }
-
