@@ -1,0 +1,145 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    height: 1000px;
+    width: 1000px;
+    margin: 0 0 0 0;
+    display: flex;
+}
+
+.carcasa {
+    margin: auto;
+    height: 900px;
+    width: 515px;
+    background: #fee528;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border:black solid 1px
+}
+
+.marco {
+    margin: 40px 25px 0px 25px;
+    height: 410px;
+    width: 465px;
+    background: rgb(22, 22, 22);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border:black inset 1px;
+    display: flex;
+}
+
+.pantalla {
+    height: 320px;
+    width: 330px;
+    margin: 30px auto auto auto; ;
+    background: grey;
+    border:black solid 1px;
+}
+
+.pantalla::before {
+    content: "GAMEBOY";
+    color: grey;
+    position: absolute;
+    top: 450px;
+    left: 360px;
+    font-size: 2em;
+}
+
+.pantalla::after{
+    content: "COLOR";
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    color: transparent;
+    background-clip: text;
+    position: absolute;
+    top: 450px;
+    left: 530px;
+    font-size: 2em;
+}
+
+.led::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: tomato;
+    position: absolute;
+    top: 250px;
+    left: 297px;
+}
+
+.led::after {
+    content: "POWER";
+    color: grey;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 270px;
+    left: 272px;
+}
+
+.botones {
+    height: 300px;
+}
+
+.ph{
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    top: 640px;
+    left: 299px;
+    background: rgb(49, 49, 49);
+    box-shadow: black 2px 2px;
+}
+
+.pv{
+    height: 150px;
+    width: 40px;
+    position: absolute;
+    top: 585px;
+    left: 355px;
+    background: rgb(49, 49, 49);
+    box-shadow: black 0px 2px;
+}
+
+.ab {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 600px;
+    left: 520px;
+}
+
+.ab::before {
+    content: "";
+    position: absolute;
+    left: 120px;
+    height: 60px;
+    width: 60px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background: rgb(49, 49, 49);
+    box-shadow: black 2px 2px;
+}
+
+.ab::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    height: 60px;
+    width: 60px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background: rgb(49, 49, 49);
+    box-shadow: black 2px 2px;
+}
+
+.bot {
+    height: 140px;
+}
