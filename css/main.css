@@ -59,12 +59,13 @@ body {
 }
 
 #boton {
-    height: 10px;
-    width: 3px;
+    height: 20px !important;
+    width: 10px !important ;
     position: absolute;
     background-color: black;
     border:black solid 1px;
-    border-radius: 2px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
     top:200px;
     left: 758px;
 }
