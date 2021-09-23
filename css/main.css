@@ -56,8 +56,9 @@ body {
     position: absolute;
     background-color: black;
     border:black solid 1px;
+    border-radius: 2px;
     top:200px;
-    left:757px;
+    left: 757px;
 }
 
 .pantalla {
@@ -79,7 +80,7 @@ body {
 
 .color {
     position: absolute;
-    top: 450px;
+    top: 455px;
     left: 376px;
     font-size: 2em;
     color: grey;
@@ -90,7 +91,7 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: absolute;
     color: #830f2e;
-    top: 446px;
+    top: 450px;
     left: 530px;
     font-size: 2em;
     font-weight: bold;
@@ -100,8 +101,8 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: absolute;
     color: #3d3d83;
-    top: 446px;
-    left: 552px;
+    top: 450px;
+    left: 550px;
     font-size: 2em;
     font-weight: bold;
 }
@@ -110,7 +111,7 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: absolute;
     color:#599c21;
-    top: 446px;
+    top: 450px;
     left: 576px;
     font-size: 2em;
     font-weight: bold;
@@ -120,7 +121,7 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: absolute;
     color: #9b752f;
-    top: 446px;
+    top: 450px;
     left: 595px;
     font-size: 2em;
     font-weight: bold;
@@ -130,8 +131,8 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     position: absolute;
     color:#08507e;
-    top: 446px;
-    left: 620px;
+    top: 450px;
+    left: 621px;
     font-size: 2em;
     font-weight: bold;
 }
@@ -157,6 +158,10 @@ body {
     position: absolute;
     top: 270px;
     left: 272px;
+}
+
+.boton.active + .led::before{
+    background: black;
 }
 
 /* Aqui termina el contenido de la pantalla y comienza el Medio de la consola */
