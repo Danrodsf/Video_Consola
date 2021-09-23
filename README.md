@@ -26,4 +26,4 @@ Ver la web:
 
 Captura de la web.
 
-![Captura](https://danrodsf.github.io/Video_Consola/img/captura.jpg)
+![Captura](https://raw.githubusercontent.com/Danrodsf/Video_Consola/main/img/captura.jpg)
