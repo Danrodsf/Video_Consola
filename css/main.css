@@ -52,13 +52,13 @@ body {
 
 #boton {
     height: 10px;
-    width: 5px;
+    width: 3px;
     position: absolute;
     background-color: black;
     border:black solid 1px;
     border-radius: 2px;
     top:200px;
-    left: 757px;
+    left: 758px;
 }
 
 .pantalla {
@@ -71,6 +71,7 @@ body {
 }
 
 #video {
+    display: none;
     background-color: white;
     height: 330px;
     width: 330px;
@@ -140,11 +141,24 @@ body {
 /* Led Encendido */
 
 .led::before {
+    display: none;
     content:"";
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background: tomato;
+    position: absolute;
+    top: 250px;
+    left: 297px;
+}
+
+.led_on::before {
+    content:"";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background:tomato;
+    box-shadow: 0px 0px 20px 2px rgb(252, 139, 120);
     position: absolute;
     top: 250px;
     left: 297px;
@@ -160,8 +174,14 @@ body {
     left: 272px;
 }
 
-.boton.active + .led::before{
-    background: black;
+.led_on::after {
+    content: "POWER";
+    color: grey;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 270px;
+    left: 272px;
 }
 
 /* Aqui termina el contenido de la pantalla y comienza el Medio de la consola */
