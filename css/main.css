@@ -12,8 +12,16 @@ html {
 /* Fuente Nintendo */
 @font-face {
     font-family: 'pretendoregular';
-    src: url(pretendo.woff) format('woff2'),
-         url(pretendo.woff2) format('woff');
+    src: url(../fonts/pretendo.woff) format('woff2'),
+         url(../fonts/pretendo.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ComicSansMS';
+    src: url(../fonts/ComicSansMS.woff) format('woff2'),
+         url(../fonts/ComicSansMS.woff2) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -89,7 +97,7 @@ body {
 }
 
 .c {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "ComicSansMS";
     position: absolute;
     color: #830f2e;
     top: 450px;
@@ -99,7 +107,7 @@ body {
 }
 
 .o {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "ComicSansMS";
     position: absolute;
     color: #3d3d83;
     top: 450px;
@@ -109,7 +117,7 @@ body {
 }
 
 .l {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "ComicSansMS";
     position: absolute;
     color:#599c21;
     top: 450px;
@@ -119,7 +127,7 @@ body {
 }
 
 .oo {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "ComicSansMS";
     position: absolute;
     color: #9b752f;
     top: 450px;
@@ -129,7 +137,7 @@ body {
 }
 
 .r {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "ComicSansMS";
     position: absolute;
     color:#08507e;
     top: 450px;
