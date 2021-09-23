@@ -1,3 +1,13 @@
+/* 
+Autor: Daniel Rodriguez
+Version: 1.0 
+*/
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+// Funcion de Encendido de la consola mediante click del boton //
+
 function iniciar() {
     var boton = document.getElementById('boton');
     boton.addEventListener('click', presionar, false);
@@ -12,6 +22,8 @@ function presionar() {
     led_on.classList.remove("led")
 }
 window.addEventListener('load', iniciar, false);
+
+// Funcion de apagado de la consola una vez finaliza el video de inicio //
 
 document.getElementById('video').addEventListener('ended',myHandler,false);
     function myHandler(e) {
