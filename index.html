@@ -12,11 +12,15 @@
 
 <body>
     <div class="carcasa">
+        <div class="Encendido">
+            <input type="button" id="boton" value="Reproducir"></button>
+        </div>
         <div class="marco">
             <div class="led">
             </div>
             <div class="pantalla">
-                <span class="color">GAMEBOY</span>
+                <video id="video" src="video/boot.mp4" width="640" height="480" autoplay></video>
+                <span class=" color">GAMEBOY</span>
                 <span class="c">C</span>
                 <span class="o">O</span>
                 <span class="l">L</span>
@@ -77,6 +81,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -50,13 +50,29 @@ body {
     display: flex;
 }
 
+#boton {
+    height: 10px;
+    width: 5px;
+    position: absolute;
+    background-color: black;
+    border:black solid 1px;
+    top:200px;
+    left:757px;
+}
+
 .pantalla {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 320px;
     width: 330px;
-    margin: 30px auto auto auto; ;
+    margin: 30px auto auto auto;
     background: grey;
     border:black solid 1px;
+}
+
+#video {
+    background-color: white;
+    height: 330px;
+    width: 330px;
 }
 
 /* Logo Gameboy Color*/
